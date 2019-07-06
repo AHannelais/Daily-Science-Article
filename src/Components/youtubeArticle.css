@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher-Bold-webfont.eot");
+  src: url("../fonts/Philosopher-Bold-webfont.woff") format("woff"),
+    url("../fonts/Philosopher-Bold-webfont.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bevan";
+  src: url("../fonts/Bevan.ttf");
+
+  font-weight: bold;
+  font-style: normal;
+}
+h1 {
+  font-family: "Bevan", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  font-size: 5em;
+}
+h2,
+h3,
+p {
+  font-family: "Philosopher", "Times New Roman", Times, serif, sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+h2 {
+  font-size: 3.5em;
+}
+.loadparent {
+  display: flex;
+}
+.videocontainer {
+  margin: auto;
+  margin-top: 100px;
+}
+.videodisplay {
+  margin: 1rem;
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+  h1,
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+}
+.mybutton {
+  padding-right: 1em;
+}
+.article {
+  background-color: rgba(256, 256, 256, 0.5);
+}
