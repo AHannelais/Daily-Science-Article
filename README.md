@@ -1,6 +1,6 @@
 
 
-In the project directory, you can run:
+### `In the project directory, you can run: `
 
 (Make sure you have Node.js installed here is a link : https://nodejs.org/en/)
 
