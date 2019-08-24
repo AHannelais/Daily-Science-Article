@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(./background/nature_background.jpeg) no-repeat center fixed;
+  background: white;
   background-size: cover;
 }
 
