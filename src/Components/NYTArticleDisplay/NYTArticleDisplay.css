@@ -1,0 +1,23 @@
+.wrapper {
+  width: 50%;
+  background-color: #cccccc;
+  transition: all 0.3s;
+  position: relative;
+  height: 500px;
+  margin-top: 20px;
+}
+.wrapper:hover {
+  background-color: #999999;
+}
+
+h3 {
+  position: absolute;
+  width: 90%;
+  top: 20%;
+}
+p {
+  position: absolute;
+  width: 90%;
+  top: 45%;
+  text-align: justify;
+}

@@ -1,0 +1,6 @@
+.carroussel-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: red;
+}
