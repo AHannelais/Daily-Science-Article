@@ -1,12 +1,13 @@
 {
   "name": "daily",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "bootstrap": "^4.3.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-multi-carousel": "^2.2.5",
     "react-scripts": "3.0.1"
   },
   "scripts": {
