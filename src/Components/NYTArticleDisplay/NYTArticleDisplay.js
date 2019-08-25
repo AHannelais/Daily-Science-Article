@@ -1,23 +1,69 @@
 import React from "react";
 import "./NYTArticleDisplay.css";
-const DisplayArticle = props => {
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 10000, min: 1300 },
+    items: 3,
+  },
+  desktop: {
+    breakpoint: { max: 1300, min: 992 },
+    items: 2,
+  },
+  tablet: {
+    breakpoint: { max: 992, min: 500 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 500, min: 0 },
+    items: 1,
+  },
+};
+const ArticleWrapper = props => {
   return (
-    <div className="wrapper">
-      <h3>{props.result.headline.main}</h3>
-      <p>{props.result.lead_paragraph}</p>
+    <div
+      className="wrapper"
+      onClick={() => {
+        window.open(props.result.web_url);
+      }}
+    >
+      <div className="content">
+        <h3>{props.result.headline.main}</h3>
+        <p>{props.result.lead_paragraph}</p>
+      </div>
+      <p className="topic">{props.result.topic}</p>
+    </div>
+  );
+};
+
+const DisplayArticle = props => {
+  if (props.results) {
+    console.log(props.deviceType);
+    return (
+      <div className="carousel-wrapper">
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={5000}
+        >
+          {props.results.map(result => {
+            return (
+              <ArticleWrapper result={result} key={result.headline.main} />
+            );
+          })}
+        </Carousel>
+      </div>
+    );
+  }
+
+  return (
+    <div className="m-20">
+      <h3>Articles Are Loading...</h3>
     </div>
   );
 };
 
 export default DisplayArticle;
-
-/*<div className="container-fluid border border-dark rounded m-2 article">
-          <h3>{this.state.result.headline.main}</h3>
-          <p className="text-justify"> {this.state.result.lead_paragraph}</p>
-          <input
-            type="button"
-            className="btn-primary m-2 rounded mybutton"
-            value="See More"
-            onClick={this.onButtonClick}
-          />
-        </div> */
