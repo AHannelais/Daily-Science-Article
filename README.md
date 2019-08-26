@@ -19,9 +19,9 @@ Then you should get your onw key and replace it in the daily/src/apis/youtube.js
 
 ### `How it Works `
 
-It picks 3 relevant articles about Science in from the New York times api and 1 Video from Youtube api.
+It picks relevant articles about Science from the New York times api and 1 Video from Youtube api.
 It actually searches only for articles and videos published in the last 24h.
-Then its shows the headline and first paragrapher of the articles and add link to the complete article.
+Then its shows the headline, topic, and first paragrapher of the articles and add link to the complete article.
 The video is simply embeded and you can see it's title and description.
 
 
