@@ -1,7 +1,7 @@
 const KEY = "1pSgiv38Y9XD40ucGJv7voQ9AkfYqcbr";
 
 const setArticleDate = () => {
-  const lastday = new Date(new Date() - 86400000);
+  const lastday = new Date(new Date() - 186400000);
   const lastdayDay =
     lastday.getDate() >= 10 ? lastday.getDate() : "0" + lastday.getDate();
   const lastdayMonth =
@@ -12,8 +12,12 @@ const setArticleDate = () => {
   const articleDate = `${lastdayYear}${lastdayMonth}${lastdayDay}`;
   return articleDate;
 };
-const getArticleUrl = topic => {
-  const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=${topic}&begin_date=${setArticleDate()}&sort=relevance&api-key=${KEY}`;
+const getArticleUrl = topics => {
+  let string = ``;
+  topics.forEach(topic => {
+    string = `${string}"${topic}"`;
+  });
+  const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=news_desk:(${string})&begin_date=${setArticleDate()}&sort=relevance&api-key=${KEY}`;
   return url;
 };
 

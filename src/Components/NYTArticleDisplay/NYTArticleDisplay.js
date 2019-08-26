@@ -33,14 +33,19 @@ const ArticleWrapper = props => {
         <h3>{props.result.headline.main}</h3>
         <p>{props.result.lead_paragraph}</p>
       </div>
-      <p className="topic">{props.result.topic}</p>
+      <p className="topic">{props.result.section_name}</p>
+      <img
+        src={`https://static01.nyt.com/${props.result.multimedia[0].url}`}
+        style={{ width: "80%", position: "absolute", bottom: "0" }}
+        alt=""
+      />
     </div>
   );
 };
 
 const DisplayArticle = props => {
   if (props.results) {
-    console.log(props.deviceType);
+    console.log(props.results[0].multimedia[0].url);
     return (
       <div className="carousel-wrapper">
         <Carousel
