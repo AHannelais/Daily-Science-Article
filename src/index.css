@@ -1,15 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: white;
-  background-size: cover;
+@font-face {
+  font-family: "Philosopher";
+  src: url("./fonts/Philosopher-Bold-webfont.eot");
+  src: url("./fonts/Philosopher-Bold-webfont.woff") format("woff"),
+    url("./fonts/Philosopher-Bold-webfont.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bevan";
+  src: url("./fonts/Bevan.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  background: #e8e8e8;
+  color: #333a56;
+}
+h1 {
+  font-family: "Bevan", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  font-size: 4vw;
+}
+h2,
+h3,
+h4 {
+  font-family: "Philosopher", "Times New Roman", Times, serif, sans-serif;
+}
+p {
+  text-align: justify;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  font-size: 0.9vw;
+}
+h4 {
+  font-size: 1.5vw;
+}
+h2 {
+  font-size: 2.5vw;
+}
+h3 {
+  font-size: 1.5vw;
+  overflow: hidden;
+}
+@media screen and (max-width: 1500px) {
+  h1 {
+    font-size: 60px;
+  }
+  h4,
+  h3 {
+    font-size: 22.5px;
+  }
+  h2 {
+    font-size: 37.5px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: calc(10vw - 5px);
+  }
+  h4,
+  h3 {
+    font-size: calc(3.75vw -1.9px);
+  }
+  h2 {
+    font-size: calc(6.3vw - 3.1px);
+  }
+  p {
+    font-size: 12px;
+  }
 }
