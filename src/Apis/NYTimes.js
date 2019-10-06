@@ -1,7 +1,7 @@
 const KEY = "1pSgiv38Y9XD40ucGJv7voQ9AkfYqcbr";
 
 const setArticleDate = () => {
-  const lastday = new Date(new Date() - 172000000);
+  const lastday = new Date(new Date() - 210000000);
   const lastdayDay =
     lastday.getDate() >= 10 ? lastday.getDate() : "0" + lastday.getDate();
   const lastdayMonth =
@@ -10,7 +10,6 @@ const setArticleDate = () => {
       : "0" + (lastday.getMonth() + 1);
   const lastdayYear = lastday.getFullYear();
   const articleDate = `${lastdayYear}${lastdayMonth}${lastdayDay}`;
-  console.log(articleDate);
   return articleDate;
 };
 const getArticleUrl = topics => {

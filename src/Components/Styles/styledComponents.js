@@ -10,6 +10,7 @@ export const ArticleWrapper = styled.div`
   margin-top: 20px;
   padding: 2%;
   border-right: 2px solid #52658f;
+
   @media screen and (max-width: 992px) {
     height: calc(30vw + 300px);
   }
