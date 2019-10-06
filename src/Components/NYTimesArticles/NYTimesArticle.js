@@ -23,7 +23,6 @@ class NYTimesArticles extends React.Component {
   };
   renderResults = () => {
     if (this.state.results && this.state.fetched) {
-      console.log(this.state.results);
       return <DisplayArticle results={this.state.results} />;
     } else {
       return (

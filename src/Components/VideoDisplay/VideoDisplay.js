@@ -4,7 +4,7 @@ const VideoDisplay = video => {
   if (!video) {
     return <div>Loading...</div>;
   }
-  console.log(video.video);
+
   const videoSrc = `https://www.youtube.com/embed/${video.video.id.videoId}`;
   return (
     <VideoWrapper>
