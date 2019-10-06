@@ -29,4 +29,4 @@ The video is simply embeded and you can see it's title and description.
 This was my very first app from scratch so i had to apply everthing i learn aubout React library ( mostly Components and JSX ).
 I learned how to use apis by feching them with axios and how to select the parameters i wanted to use.
 I had to get used to the date sytem in javascript to create the date 24h before the search.
-A little bit of design, it was my  first time using Bootstrap ( CSS Framework )  and my first responsive app too.
+A little bit of design, using some Bootstrap ( CSS Framework ), styled-components (CSS designed as React Components) and my first responsive app too.
