@@ -10,7 +10,10 @@ export const ArticleWrapper = styled.div`
   margin-top: 20px;
   padding: 2%;
   border-right: 2px solid #52658f;
-
+  cursor: pointer;
+  :hover {
+    background-color: rgb(200, 200, 200);
+  }
   @media screen and (max-width: 992px) {
     height: calc(30vw + 300px);
   }
@@ -75,6 +78,9 @@ export const VideoWrapper = styled.div`
   margin-top: calc(3% + 20px);
   padding: 2%;
   border-right: 2px solid #52658f;
+  :hover {
+    background-color: rgb(200, 200, 200);
+  }
   @media screen and (max-width: 992px) {
     height: calc(30vw + 300px);
   }
@@ -104,12 +110,12 @@ export const VideoWrapper = styled.div`
 
   div {
     border-top: 2px solid #52658f;
+    overflow: hidden;
     position: relative;
     padding-top: 2%;
     padding-left: 2%;
     width: 100%;
     height: auto;
-    background-color: #f7f5e6;
   }
 `;
 export const Topic2 = styled.p`
