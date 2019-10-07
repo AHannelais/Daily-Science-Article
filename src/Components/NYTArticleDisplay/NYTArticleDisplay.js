@@ -29,7 +29,11 @@ const responsive = {
 
 const Article = props => {
   return (
-    <ArticleWrapper>
+    <ArticleWrapper
+      onClick={() => {
+        window.open(props.result.web_url);
+      }}
+    >
       <img
         src={
           props.result.multimedia[0]
